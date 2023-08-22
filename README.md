@@ -34,7 +34,6 @@ Kullanıcıların sahip olduğu yetenekleri temsil eder. Yetenek adı, yüzde de
 - **Percent**: Yetenek yüzde değeri.
 - **ImageUrl**: Yeteneği gösteren bir resim URL'i.
 
-- 
 ### Blogs
 Kullanıcıların yazdığı blog yazılarını içerir. Başlık, kapak resmi URL'si, içerik ve tarih gibi önemli detaylar bu tabloda bulunur.
 
@@ -54,3 +53,39 @@ Kullanıcıların yazdığı blog yazılarını içerir. Başlık, kapak resmi U
 - **Content**: İletişim talebinin içeriği.
 - **Date**: İletişim talebinin tarihi.
 - **IsCompleted**: İletişim talebinin tamamlanma durumu.
+
+### Experiences
+Kullanıcının çalıştığı deneyimleri temsil eder. Şirket adı, şehir, başlama ve bitiş tarihleri, pozisyon ve açıklama gibi detayları içerir.
+
+- **Id**: Deneyim kimlik numarası.
+- **CompanyName**: Deneyimin yaşandığı şirket adı.
+- **City**: Şirketin bulunduğu şehir.
+- **StartingDate**: Deneyimin başlama tarihi.
+- **LeavingDate**: Deneyimin bitiş tarihi.
+- **Profession**: Deneyimdeki pozisyon.
+- **Description**: Deneyim hakkında açıklama.
+
+### Hashtags
+Blog yazıları için kullanılan etiketleri saklar. Etiket adı ve hangi bloga ait olduğu bilgisi bu tabloda bulunur.
+
+- **Id**: Etiket kimlik numarası.
+- **Tag**: Etiketin adı.
+- **BlogId**: Hangi blog yazısına ait olduğu.
+
+### SocialMedias
+Kullanıcının sosyal medya profillerini içerir. Sosyal medya adı, simge ve profil bağlantısı gibi verileri tutar.
+
+- **Id**: Sosyal medya kimlik numarası.
+- **Name**: Sosyal medya platformunun adı.
+- **Icon**: Sosyal medya platformunun simgesi.
+- **Link**: Kullanıcının sosyal medya profil bağlantısı.
+
+## Veritabanı İlişkisi
+
+- **Blogs** tablosu ile **Hashtags** tablosu arasında 1'den çok ilişki bulunur. Her bir blog yazısı birden çok etiket içerebilir.
+
+## Kurulum
+
+1. Veritabanını oluşturmak için script dosyasını SQL Server Management Studio veya benzeri bir araçla çalıştırın.
+2. Projeyi yerel makinenizde veya sunucunuzda çalıştırın.
+3. Veritabanına erişim kodları ve bağlantı detayları eklemeyi unutmayın.
