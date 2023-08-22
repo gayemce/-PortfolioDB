@@ -6,6 +6,10 @@ Bu README dosyası, **PortfolioDB** adlı veritabanı tasarımını açıklamak 
 
 Bu proje, kişisel bir portfolyo websitesi için gerekli veritabanı yapısını içermektedir. Proje, kullanıcıların yeteneklerini, blog yazılarını, iletişim bilgilerini, deneyimlerini ve daha fazlasını saklamak ve yönetmek için tasarlanmıştır.
 
+## Portfolyo Veritabanı Diyagramı
+
+![Portfolio Database Diagram](PortfolioDB.png)
+
 ## Tablolar ve İlişkiler
 
 Veritabanı, aşağıdaki tabloları içermektedir:
