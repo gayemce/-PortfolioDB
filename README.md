@@ -32,4 +32,25 @@ Kullanıcıların sahip olduğu yetenekleri temsil eder. Yetenek adı, yüzde de
 - **Name**: Yeteneğin adı.
 - **IsActive**: Yeteneğin aktif olup olmadığı.
 - **Percent**: Yetenek yüzde değeri.
-- **ImageUrl**: Yeteneği gösteren bir resim URL'si.
+- **ImageUrl**: Yeteneği gösteren bir resim URL'i.
+
+- 
+### Blogs
+Kullanıcıların yazdığı blog yazılarını içerir. Başlık, kapak resmi URL'si, içerik ve tarih gibi önemli detaylar bu tabloda bulunur.
+
+- **Id**: Blog kimlik numarası.
+- **Title**: Blog yazısının başlığı.
+- **CoverImgUrl**: Blog yazısının kapak resmi URL'i.
+- **Content**: Blog yazısının içeriği.
+- **Date**: Blog yazısının tarihi.
+
+### Contacts
+İletişim formundan gelen iletişim taleplerini saklar. Ad, e-posta, konu, içerik, tarih ve tamamlanma durumu gibi bilgiler bu tabloda yer alır.
+
+- **Id**: İletişim talep kimlik numarası.
+- **Name**: Gönderenin adı.
+- **Email**: Gönderenin e-posta adresi.
+- **Subject**: İletişim talebinin konusu.
+- **Content**: İletişim talebinin içeriği.
+- **Date**: İletişim talebinin tarihi.
+- **IsCompleted**: İletişim talebinin tamamlanma durumu.
